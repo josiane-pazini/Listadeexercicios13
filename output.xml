@@ -1,323 +1,362 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2025-02-23T17:01:04.243825" rpa="false" schemaversion="5">
-<suite id="s1" name="Comprar Passagem Po" source="c:\iterasys\F140\Listadeexercicios13\tests\web\comprar_passagem_po.robot">
-<test id="s1-t1" name="Comprar passagem" line="10">
-<kw name="Abrir navegador" owner="base_page" type="SETUP">
-<kw name="Register Keyword To Run On Failure" owner="SeleniumLibrary">
-<msg time="2025-02-23T17:01:04.461823" level="INFO">Tirar Screenchot will be run on failure.</msg>
-<arg>Tirar Screenchot</arg>
-<doc>Sets the keyword to execute, when a SeleniumLibrary keyword fails.</doc>
-<status status="PASS" start="2025-02-23T17:01:04.461823" elapsed="0.002988"/>
-</kw>
-<kw name="Obter Data e hora" owner="base_page">
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2025-03-03T17:13:29.134842" rpa="false" schemaversion="5">
+<suite id="s1" name="Web" source="c:\iterasys\F140\Listadeexercicios13\tests\web">
+<kw name="Obter Data e hora" owner="base_page" type="SETUP">
 <kw name="Get Current Date" owner="DateTime">
-<msg time="2025-02-23T17:01:04.465807" level="INFO">${date} = 2025-02-23 17:01:04.466</msg>
+<msg time="2025-03-03T17:13:29.403283" level="INFO">${date} = 2025-03-03 17:13:29.403</msg>
 <var>${date}</var>
 <doc>Returns current local or UTC time with an optional increment.</doc>
-<status status="PASS" start="2025-02-23T17:01:04.464811" elapsed="0.000996"/>
+<status status="PASS" start="2025-03-03T17:13:29.403283" elapsed="0.000000"/>
 </kw>
 <kw name="Convert Date" owner="DateTime">
-<msg time="2025-02-23T17:01:04.469798" level="INFO">${date} = 2025.02.23_17.01.04</msg>
+<msg time="2025-03-03T17:13:29.422396" level="INFO">${date} = 2025.03.03_17.13.29</msg>
 <var>${date}</var>
 <arg>${date}</arg>
 <arg>result_format=%Y.%m.%d_%H.%M.%S</arg>
 <doc>Converts between supported `date formats`.</doc>
-<status status="PASS" start="2025-02-23T17:01:04.465807" elapsed="0.004987"/>
+<status status="PASS" start="2025-03-03T17:13:29.403283" elapsed="0.019113"/>
 </kw>
 <kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2025-02-23T17:01:04.470794" level="INFO">${date} = 2025.02.23_17.01.04</msg>
-<msg time="2025-02-23T17:01:04.470794" level="INFO">${date} = None</msg>
+<msg time="2025-03-03T17:13:29.422396" level="INFO">${date} = 2025.03.03_17.13.29</msg>
+<msg time="2025-03-03T17:13:29.422396" level="INFO">${date} = None</msg>
 <var>${date}</var>
 <arg>${date}</arg>
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2025-02-23T17:01:04.470794" elapsed="0.000000"/>
+<status status="PASS" start="2025-03-03T17:13:29.422396" elapsed="0.000000"/>
 </kw>
-<status status="PASS" start="2025-02-23T17:01:04.464811" elapsed="0.005983"/>
+<status status="PASS" start="2025-03-03T17:13:29.403283" elapsed="0.019113"/>
+</kw>
+<suite id="s1-s1" name="Comprar Passagem Po Ddt" source="c:\iterasys\F140\Listadeexercicios13\tests\web\comprar_passagem_po_ddt.robot">
+<test id="s1-s1-t1" name="TC003" line="9">
+<kw name="Abrir navegador" owner="base_page" type="SETUP">
+<kw name="Register Keyword To Run On Failure" owner="SeleniumLibrary">
+<msg time="2025-03-03T17:13:29.437654" level="INFO">Tirar Screenchot will be run on failure.</msg>
+<arg>Tirar Screenchot</arg>
+<doc>Sets the keyword to execute, when a SeleniumLibrary keyword fails.</doc>
+<status status="PASS" start="2025-03-03T17:13:29.437654" elapsed="0.000000"/>
+</kw>
+<kw name="Obter Data e hora" owner="base_page">
+<kw name="Get Current Date" owner="DateTime">
+<msg time="2025-03-03T17:13:29.437654" level="INFO">${date} = 2025-03-03 17:13:29.438</msg>
+<var>${date}</var>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<status status="PASS" start="2025-03-03T17:13:29.437654" elapsed="0.000000"/>
+</kw>
+<kw name="Convert Date" owner="DateTime">
+<msg time="2025-03-03T17:13:29.437654" level="INFO">${date} = 2025.03.03_17.13.29</msg>
+<var>${date}</var>
+<arg>${date}</arg>
+<arg>result_format=%Y.%m.%d_%H.%M.%S</arg>
+<doc>Converts between supported `date formats`.</doc>
+<status status="PASS" start="2025-03-03T17:13:29.437654" elapsed="0.000000"/>
+</kw>
+<kw name="Set Suite Variable" owner="BuiltIn">
+<msg time="2025-03-03T17:13:29.437654" level="INFO">${date} = 2025.03.03_17.13.29</msg>
+<msg time="2025-03-03T17:13:29.437654" level="INFO">${date} = None</msg>
+<var>${date}</var>
+<arg>${date}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<status status="PASS" start="2025-03-03T17:13:29.437654" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2025-03-03T17:13:29.437654" elapsed="0.000000"/>
 </kw>
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-02-23T17:01:04.471791" level="INFO">Opening browser 'Chrome' to base url 'https://www.blazedemo.com'.</msg>
+<msg time="2025-03-03T17:13:29.437654" level="INFO">Opening browser 'Chrome' to base url 'https://www.blazedemo.com'.</msg>
 <arg>url=${url}</arg>
 <arg>browser=${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-02-23T17:01:04.471791" elapsed="3.207666"/>
+<status status="PASS" start="2025-03-03T17:13:29.437654" elapsed="2.702270"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-02-23T17:01:07.680491" elapsed="0.023180"/>
+<status status="PASS" start="2025-03-03T17:13:32.140923" elapsed="0.019957"/>
 </kw>
 <kw name="Set Browser Implicit Wait" owner="SeleniumLibrary">
 <arg>5000ms</arg>
 <doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" start="2025-02-23T17:01:07.703671" elapsed="0.000000"/>
+<status status="PASS" start="2025-03-03T17:13:32.160880" elapsed="0.000000"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>css=div.jumbotron h1</arg>
 <arg>${timeout}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-02-23T17:01:07.703671" elapsed="0.042202"/>
+<status status="PASS" start="2025-03-03T17:13:32.160880" elapsed="0.037106"/>
 </kw>
-<status status="PASS" start="2025-02-23T17:01:04.460821" elapsed="3.285052"/>
+<status status="PASS" start="2025-03-03T17:13:29.436758" elapsed="2.761228"/>
 </kw>
+<kw name="Comprar passagem">
 <kw name="Tirar Screenshot" owner="base_page">
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2025-02-23T17:01:07.851112" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="screenshots/lista13/Comprar%20passagem/2025.02.23_17.01.04/1-Home.jpg"&gt;&lt;img src="screenshots/lista13/Comprar%20passagem/2025.02.23_17.01.04/1-Home.jpg" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2025-02-23T17:01:07.851112" level="INFO">C:\Users\Josiane\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py:822: UserWarning: name used for saved screenshot does not match file type. It should end with a `.png` extension
+<msg time="2025-03-03T17:13:32.319349" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="screenshots/lista13/TC003/2025.03.03_17.13.29/1-Home.jpg"&gt;&lt;img src="screenshots/lista13/TC003/2025.03.03_17.13.29/1-Home.jpg" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-03-03T17:13:32.319349" level="INFO">C:\Users\Josiane\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py:822: UserWarning: name used for saved screenshot does not match file type. It should end with a `.png` extension
   return self.get_screenshot_as_file(filename)</msg>
 <arg>screenshots/lista13/${TEST_NAME}/${date}/${screenshot_name}.jpg</arg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2025-02-23T17:01:07.745873" elapsed="0.106241"/>
+<status status="PASS" start="2025-03-03T17:13:32.200977" elapsed="0.118372"/>
 </kw>
 <arg>1-Home</arg>
-<status status="PASS" start="2025-02-23T17:01:07.745873" elapsed="0.106241"/>
+<status status="PASS" start="2025-03-03T17:13:32.199979" elapsed="0.119370"/>
 </kw>
 <kw name="Selecionar cidade de partida" owner="index_page">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${cidade_partida}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-02-23T17:01:07.854098" elapsed="0.030037"/>
+<status status="PASS" start="2025-03-03T17:13:32.319349" elapsed="0.024929"/>
 </kw>
 <kw name="Select From List By Label" owner="SeleniumLibrary">
-<msg time="2025-02-23T17:01:07.885199" level="INFO">Selecting options from selection list 'name=fromPort' by label Paris.</msg>
+<msg time="2025-03-03T17:13:32.344278" level="INFO">Selecting options from selection list 'name=fromPort' by label Paris.</msg>
 <arg>${cidade_partida}</arg>
 <arg>${origem}</arg>
 <doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<status status="PASS" start="2025-02-23T17:01:07.884845" elapsed="0.057070"/>
+<status status="PASS" start="2025-03-03T17:13:32.344278" elapsed="0.043548"/>
 </kw>
-<arg>Paris</arg>
-<status status="PASS" start="2025-02-23T17:01:07.853098" elapsed="0.088817"/>
+<arg>${cidade_partida}</arg>
+<status status="PASS" start="2025-03-03T17:13:32.319349" elapsed="0.068477"/>
 </kw>
 <kw name="Selecionar cidade de destino" owner="index_page">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${cidade_destino}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-02-23T17:01:07.944012" elapsed="0.026513"/>
+<status status="PASS" start="2025-03-03T17:13:32.388826" elapsed="0.013979"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-03T17:13:32.402805" level="INFO">Clicking element 'name=toPort'.</msg>
+<arg>${cidade_destino}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-03T17:13:32.402805" elapsed="0.060246"/>
 </kw>
 <kw name="Select From List By Label" owner="SeleniumLibrary">
-<msg time="2025-02-23T17:01:07.970525" level="INFO">Selecting options from selection list 'name=toPort' by label Buenos Aires.</msg>
+<msg time="2025-03-03T17:13:32.466215" level="INFO">Selecting options from selection list 'name=toPort' by label London.</msg>
 <arg>${cidade_destino}</arg>
 <arg>${destino}</arg>
 <doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<status status="PASS" start="2025-02-23T17:01:07.970525" elapsed="0.040312"/>
+<status status="PASS" start="2025-03-03T17:13:32.463051" elapsed="0.063080"/>
 </kw>
-<arg>Buenos Aires</arg>
-<status status="PASS" start="2025-02-23T17:01:07.942915" elapsed="0.067922"/>
+<arg>${cidade_destino}</arg>
+<status status="PASS" start="2025-03-03T17:13:32.387826" elapsed="0.138305"/>
 </kw>
 <kw name="Tirar Screenshot" owner="base_page">
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2025-02-23T17:01:08.082472" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="screenshots/lista13/Comprar%20passagem/2025.02.23_17.01.04/2-%20Destino%20escolhido.jpg"&gt;&lt;img src="screenshots/lista13/Comprar%20passagem/2025.02.23_17.01.04/2-%20Destino%20escolhido.jpg" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-03-03T17:13:32.618585" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="screenshots/lista13/TC003/2025.03.03_17.13.29/2-%20Destino%20escolhido.jpg"&gt;&lt;img src="screenshots/lista13/TC003/2025.03.03_17.13.29/2-%20Destino%20escolhido.jpg" width="800px"&gt;&lt;/a&gt;</msg>
 <arg>screenshots/lista13/${TEST_NAME}/${date}/${screenshot_name}.jpg</arg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2025-02-23T17:01:08.010837" elapsed="0.071635"/>
+<status status="PASS" start="2025-03-03T17:13:32.526131" elapsed="0.092454"/>
 </kw>
 <arg>2- Destino escolhido</arg>
-<status status="PASS" start="2025-02-23T17:01:08.010837" elapsed="0.071635"/>
+<status status="PASS" start="2025-03-03T17:13:32.526131" elapsed="0.092454"/>
 </kw>
 <kw name="Clicar no botão Find Flights" owner="index_page">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-02-23T17:01:08.084466" level="INFO">Clicking button 'css=.btn-primary'.</msg>
+<msg time="2025-03-03T17:13:32.619617" level="INFO">Clicking button 'css=.btn-primary'.</msg>
 <arg>${btn_find_flights}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-23T17:01:08.084466" elapsed="0.361057"/>
+<status status="PASS" start="2025-03-03T17:13:32.619617" elapsed="0.328176"/>
 </kw>
-<status status="PASS" start="2025-02-23T17:01:08.084466" elapsed="0.361057"/>
+<status status="PASS" start="2025-03-03T17:13:32.619617" elapsed="0.328669"/>
 </kw>
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2025-02-23T17:01:08.447516" level="INFO">Verifying element 'css=h3' contains exact text 'Flights from Paris to Buenos Aires:'.</msg>
+<msg time="2025-03-03T17:13:32.948639" level="INFO">Verifying element 'css=h3' contains exact text 'Flights from Paris to London:'.</msg>
 <arg>${titulo_secao_h3}</arg>
-<arg>Flights from Paris to Buenos Aires:</arg>
+<arg>Flights from ${cidade_partida} to ${cidade_destino}:</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2025-02-23T17:01:08.446519" elapsed="0.049195"/>
+<status status="PASS" start="2025-03-03T17:13:32.948621" elapsed="0.052356"/>
 </kw>
 <kw name="Tirar Screenshot" owner="base_page">
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2025-02-23T17:01:08.627206" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="screenshots/lista13/Comprar%20passagem/2025.02.23_17.01.04/3-%20Voos%20Disponiveis.jpg"&gt;&lt;img src="screenshots/lista13/Comprar%20passagem/2025.02.23_17.01.04/3-%20Voos%20Disponiveis.jpg" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-03-03T17:13:33.133726" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="screenshots/lista13/TC003/2025.03.03_17.13.29/3-%20Voos%20Disponiveis.jpg"&gt;&lt;img src="screenshots/lista13/TC003/2025.03.03_17.13.29/3-%20Voos%20Disponiveis.jpg" width="800px"&gt;&lt;/a&gt;</msg>
 <arg>screenshots/lista13/${TEST_NAME}/${date}/${screenshot_name}.jpg</arg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2025-02-23T17:01:08.495714" elapsed="0.132491"/>
+<status status="PASS" start="2025-03-03T17:13:33.000977" elapsed="0.133604"/>
 </kw>
 <arg>3- Voos Disponiveis</arg>
-<status status="PASS" start="2025-02-23T17:01:08.495714" elapsed="0.133488"/>
+<status status="PASS" start="2025-03-03T17:13:33.000977" elapsed="0.133604"/>
 </kw>
 <kw name="Selecionar primeiro voo" owner="reserve_page">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${primeiro_voo}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-02-23T17:01:08.630197" elapsed="0.023381"/>
+<status status="PASS" start="2025-03-03T17:13:33.134581" elapsed="0.019474"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-02-23T17:01:08.654556" level="INFO">Clicking button 'xpath=//tbody/tr[1]//input[@value='Choose This Flight']'.</msg>
+<msg time="2025-03-03T17:13:33.154055" level="INFO">Clicking button 'xpath=//tbody/tr[1]//input[@value='Choose This Flight']'.</msg>
 <arg>${primeiro_voo}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-23T17:01:08.654556" elapsed="0.395512"/>
+<status status="PASS" start="2025-03-03T17:13:33.154055" elapsed="0.418296"/>
 </kw>
-<status status="PASS" start="2025-02-23T17:01:08.630197" elapsed="0.420869"/>
+<status status="PASS" start="2025-03-03T17:13:33.134581" elapsed="0.438782"/>
 </kw>
 <kw name="Tirar Screenshot" owner="base_page">
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2025-02-23T17:01:09.197820" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="screenshots/lista13/Comprar%20passagem/2025.02.23_17.01.04/4-%20Voo%20Selecionado.jpg"&gt;&lt;img src="screenshots/lista13/Comprar%20passagem/2025.02.23_17.01.04/4-%20Voo%20Selecionado.jpg" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-03-03T17:13:33.734578" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="screenshots/lista13/TC003/2025.03.03_17.13.29/4-%20Voo%20Selecionado.jpg"&gt;&lt;img src="screenshots/lista13/TC003/2025.03.03_17.13.29/4-%20Voo%20Selecionado.jpg" width="800px"&gt;&lt;/a&gt;</msg>
 <arg>screenshots/lista13/${TEST_NAME}/${date}/${screenshot_name}.jpg</arg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2025-02-23T17:01:09.052065" elapsed="0.146000"/>
+<status status="PASS" start="2025-03-03T17:13:33.574371" elapsed="0.160207"/>
 </kw>
 <arg>4- Voo Selecionado</arg>
-<status status="PASS" start="2025-02-23T17:01:09.051066" elapsed="0.146999"/>
+<status status="PASS" start="2025-03-03T17:13:33.573363" elapsed="0.161215"/>
 </kw>
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2025-02-23T17:01:09.198065" level="INFO">Verifying element 'css=h2' contains exact text 'Your flight from TLV to SFO has been reserved.'.</msg>
+<msg time="2025-03-03T17:13:33.734578" level="INFO">Verifying element 'css=h2' contains exact text 'Your flight from TLV to SFO has been reserved.'.</msg>
 <arg>${titulo_secao_h2}</arg>
 <arg>Your flight from TLV to SFO has been reserved.</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2025-02-23T17:01:09.198065" elapsed="0.023610"/>
+<status status="PASS" start="2025-03-03T17:13:33.734578" elapsed="0.019794"/>
 </kw>
 <kw name="Preencher Name" owner="purchase_page">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-23T17:01:09.222755" level="INFO">Typing text 'Jose dos Santos' into text field 'id=inputName'.</msg>
+<msg time="2025-03-03T17:13:33.754372" level="INFO">Typing text 'Jose dos Santos' into text field 'id=inputName'.</msg>
 <arg>${txt_name}</arg>
 <arg>${name}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-23T17:01:09.222755" elapsed="0.079623"/>
+<status status="PASS" start="2025-03-03T17:13:33.754372" elapsed="0.118049"/>
 </kw>
 <arg>Jose dos Santos</arg>
-<status status="PASS" start="2025-02-23T17:01:09.222755" elapsed="0.079623"/>
+<status status="PASS" start="2025-03-03T17:13:33.754372" elapsed="0.118049"/>
 </kw>
 <kw name="Preencher Address" owner="purchase_page">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-23T17:01:09.311262" level="INFO">Typing text 'Rua Teste' into text field 'id=address'.</msg>
+<msg time="2025-03-03T17:13:33.872421" level="INFO">Typing text 'Rua Teste' into text field 'id=address'.</msg>
 <arg>${txt_address}</arg>
 <arg>${address}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-23T17:01:09.310264" elapsed="0.073384"/>
+<status status="PASS" start="2025-03-03T17:13:33.872421" elapsed="0.094449"/>
 </kw>
 <arg>Rua Teste</arg>
-<status status="PASS" start="2025-02-23T17:01:09.302378" elapsed="0.081270"/>
+<status status="PASS" start="2025-03-03T17:13:33.872421" elapsed="0.095459"/>
 </kw>
 <kw name="Preencher City" owner="purchase_page">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-23T17:01:09.385644" level="INFO">Typing text 'Sao Paulo' into text field 'id=city'.</msg>
+<msg time="2025-03-03T17:13:33.969136" level="INFO">Typing text 'Sao Paulo' into text field 'id=city'.</msg>
 <arg>${txt_city}</arg>
 <arg>${city}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-23T17:01:09.384647" elapsed="0.065827"/>
+<status status="PASS" start="2025-03-03T17:13:33.969136" elapsed="0.085968"/>
 </kw>
 <arg>Sao Paulo</arg>
-<status status="PASS" start="2025-02-23T17:01:09.384647" elapsed="0.065827"/>
+<status status="PASS" start="2025-03-03T17:13:33.967880" elapsed="0.087224"/>
 </kw>
 <kw name="Preencher State" owner="purchase_page">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-23T17:01:09.450474" level="INFO">Typing text 'SP' into text field 'id=state'.</msg>
+<msg time="2025-03-03T17:13:34.055104" level="INFO">Typing text 'SP' into text field 'id=state'.</msg>
 <arg>${txt_state}</arg>
 <arg>${state}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-23T17:01:09.450474" elapsed="0.061245"/>
+<status status="PASS" start="2025-03-03T17:13:34.055104" elapsed="0.096107"/>
 </kw>
 <arg>SP</arg>
-<status status="PASS" start="2025-02-23T17:01:09.450474" elapsed="0.061245"/>
+<status status="PASS" start="2025-03-03T17:13:34.055104" elapsed="0.096107"/>
 </kw>
 <kw name="Preencher Zip Code" owner="purchase_page">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-23T17:01:09.511719" level="INFO">Typing text '292929-000' into text field 'id=zipCode'.</msg>
+<msg time="2025-03-03T17:13:34.152308" level="INFO">Typing text '292929-000' into text field 'id=zipCode'.</msg>
 <arg>${txt_zip_code}</arg>
 <arg>${zipcode}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-23T17:01:09.511719" elapsed="0.068072"/>
+<status status="PASS" start="2025-03-03T17:13:34.152308" elapsed="0.083398"/>
 </kw>
 <arg>292929-000</arg>
-<status status="PASS" start="2025-02-23T17:01:09.511719" elapsed="0.068072"/>
+<status status="PASS" start="2025-03-03T17:13:34.152308" elapsed="0.083398"/>
 </kw>
 <kw name="Preencher Card Type" owner="purchase_page">
 <kw name="Select From List By Label" owner="SeleniumLibrary">
-<msg time="2025-02-23T17:01:09.579791" level="INFO">Selecting options from selection list 'id=cardType' by label Visa.</msg>
+<msg time="2025-03-03T17:13:34.235706" level="INFO">Selecting options from selection list 'id=cardType' by label Visa.</msg>
 <arg>${select_card_type}</arg>
 <arg>${card_type}</arg>
 <doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<status status="PASS" start="2025-02-23T17:01:09.579791" elapsed="0.052336"/>
+<status status="PASS" start="2025-03-03T17:13:34.235706" elapsed="0.053032"/>
 </kw>
 <arg>Visa</arg>
-<status status="PASS" start="2025-02-23T17:01:09.579791" elapsed="0.052580"/>
+<status status="PASS" start="2025-03-03T17:13:34.235706" elapsed="0.053032"/>
 </kw>
 <kw name="Preencher Credit Card Number" owner="purchase_page">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-23T17:01:09.633961" level="INFO">Typing text '1111111111111111' into text field 'id=creditCardNumber'.</msg>
+<msg time="2025-03-03T17:13:34.288738" level="INFO">Typing text '1111111111111111' into text field 'id=creditCardNumber'.</msg>
 <arg>${txt_credit_card_number}</arg>
 <arg>${credit_card_number}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-23T17:01:09.633399" elapsed="0.066891"/>
+<status status="PASS" start="2025-03-03T17:13:34.288738" elapsed="0.084823"/>
 </kw>
 <arg>1111111111111111</arg>
-<status status="PASS" start="2025-02-23T17:01:09.632914" elapsed="0.067376"/>
+<status status="PASS" start="2025-03-03T17:13:34.288738" elapsed="0.084823"/>
 </kw>
 <kw name="Preencher Name On Card" owner="purchase_page">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-23T17:01:09.700290" level="INFO">Typing text 'Jose dos Santos' into text field 'id=nameOnCard'.</msg>
+<msg time="2025-03-03T17:13:34.373561" level="INFO">Typing text 'Jose dos Santos' into text field 'id=nameOnCard'.</msg>
 <arg>${txt_name_card}</arg>
 <arg>${name_card}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-23T17:01:09.700290" elapsed="0.062282"/>
+<status status="PASS" start="2025-03-03T17:13:34.373561" elapsed="0.100375"/>
 </kw>
 <arg>Jose dos Santos</arg>
-<status status="PASS" start="2025-02-23T17:01:09.700290" elapsed="0.062282"/>
+<status status="PASS" start="2025-03-03T17:13:34.373561" elapsed="0.100375"/>
 </kw>
 <kw name="Tirar Screenshot" owner="base_page">
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2025-02-23T17:01:09.895049" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="screenshots/lista13/Comprar%20passagem/2025.02.23_17.01.04/5-%20Dados%20da%20compra.jpg"&gt;&lt;img src="screenshots/lista13/Comprar%20passagem/2025.02.23_17.01.04/5-%20Dados%20da%20compra.jpg" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-03-03T17:13:34.568432" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="screenshots/lista13/TC003/2025.03.03_17.13.29/5-%20Dados%20da%20compra.jpg"&gt;&lt;img src="screenshots/lista13/TC003/2025.03.03_17.13.29/5-%20Dados%20da%20compra.jpg" width="800px"&gt;&lt;/a&gt;</msg>
 <arg>screenshots/lista13/${TEST_NAME}/${date}/${screenshot_name}.jpg</arg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2025-02-23T17:01:09.762572" elapsed="0.132477"/>
+<status status="PASS" start="2025-03-03T17:13:34.473936" elapsed="0.109448"/>
 </kw>
 <arg>5- Dados da compra</arg>
-<status status="PASS" start="2025-02-23T17:01:09.762572" elapsed="0.132477"/>
+<status status="PASS" start="2025-03-03T17:13:34.473936" elapsed="0.109448"/>
 </kw>
 <kw name="Clicar no botão Purchase flight" owner="purchase_page">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-02-23T17:01:09.895049" level="INFO">Clicking button 'css=.btn-primary'.</msg>
+<msg time="2025-03-03T17:13:34.585326" level="INFO">Clicking button 'css=.btn-primary'.</msg>
 <arg>${btn_purchase_flight}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-23T17:01:09.895049" elapsed="0.459685"/>
+<status status="PASS" start="2025-03-03T17:13:34.585326" elapsed="0.471783"/>
 </kw>
-<status status="PASS" start="2025-02-23T17:01:09.895049" elapsed="0.460299"/>
+<status status="PASS" start="2025-03-03T17:13:34.583384" elapsed="0.474365"/>
 </kw>
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2025-02-23T17:01:10.356280" level="INFO">Verifying element 'css=div.hero-unit h1' contains exact text 'Thank you for your purchase today!'.</msg>
+<msg time="2025-03-03T17:13:35.058131" level="INFO">Verifying element 'css=div.hero-unit h1' contains exact text 'Thank you for your purchase today!'.</msg>
 <arg>${titulo_secao_h1}</arg>
 <arg>Thank you for your purchase today!</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2025-02-23T17:01:10.355891" elapsed="0.023708"/>
+<status status="PASS" start="2025-03-03T17:13:35.058065" elapsed="0.027632"/>
 </kw>
 <kw name="Tirar Screenshot" owner="base_page">
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2025-02-23T17:01:10.476899" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="screenshots/lista13/Comprar%20passagem/2025.02.23_17.01.04/6-%20Confirma%C3%A7%C3%A3o%20de%20compra.jpg"&gt;&lt;img src="screenshots/lista13/Comprar%20passagem/2025.02.23_17.01.04/6-%20Confirma%C3%A7%C3%A3o%20de%20compra.jpg" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-03-03T17:13:35.195910" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="screenshots/lista13/TC003/2025.03.03_17.13.29/6-%20Confirma%C3%A7%C3%A3o%20de%20compra.jpg"&gt;&lt;img src="screenshots/lista13/TC003/2025.03.03_17.13.29/6-%20Confirma%C3%A7%C3%A3o%20de%20compra.jpg" width="800px"&gt;&lt;/a&gt;</msg>
 <arg>screenshots/lista13/${TEST_NAME}/${date}/${screenshot_name}.jpg</arg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2025-02-23T17:01:10.381593" elapsed="0.096303"/>
+<status status="PASS" start="2025-03-03T17:13:35.085697" elapsed="0.110213"/>
 </kw>
 <arg>6- Confirmação de compra</arg>
-<status status="PASS" start="2025-02-23T17:01:10.380595" elapsed="0.097301"/>
+<status status="PASS" start="2025-03-03T17:13:35.085697" elapsed="0.114230"/>
 </kw>
 <kw name="Retornar para pagina inicial" owner="base_page">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-23T17:01:10.480889" level="INFO">Clicking element 'xpath=//a[@class="brand" and text()="Travel The World"]'.</msg>
+<msg time="2025-03-03T17:13:35.200873" level="INFO">Clicking element 'xpath=//a[@class="brand" and text()="Travel The World"]'.</msg>
 <arg>${link_travel}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-23T17:01:10.480889" elapsed="0.361175"/>
+<status status="PASS" start="2025-03-03T17:13:35.200873" elapsed="0.368639"/>
 </kw>
-<status status="PASS" start="2025-02-23T17:01:10.479891" elapsed="0.362173"/>
+<status status="PASS" start="2025-03-03T17:13:35.199927" elapsed="0.369585"/>
+</kw>
+<arg>Paris</arg>
+<arg>London</arg>
+<status status="PASS" start="2025-03-03T17:13:32.198984" elapsed="3.371491"/>
 </kw>
 <kw name="Fechar navegador" owner="base_page" type="TEARDOWN">
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-23T17:01:11.345335" level="INFO">Slept 500 milliseconds.</msg>
+<msg time="2025-03-03T17:13:36.073481" level="INFO">Slept 500 milliseconds.</msg>
 <arg>500ms</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-23T17:01:10.844060" elapsed="0.501275"/>
+<status status="PASS" start="2025-03-03T17:13:35.572232" elapsed="0.501249"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-02-23T17:01:11.345335" elapsed="2.130381"/>
+<status status="PASS" start="2025-03-03T17:13:36.073481" elapsed="2.157791"/>
 </kw>
-<status status="PASS" start="2025-02-23T17:01:10.843061" elapsed="2.633658"/>
+<status status="PASS" start="2025-03-03T17:13:35.570966" elapsed="2.660306"/>
 </kw>
-<status status="PASS" start="2025-02-23T17:01:04.459834" elapsed="9.017141"/>
+<status status="PASS" start="2025-03-03T17:13:29.435759" elapsed="8.796722"/>
 </test>
-<status status="PASS" start="2025-02-23T17:01:04.248850" elapsed="9.230120"/>
+<status status="PASS" start="2025-03-03T17:13:29.422396" elapsed="8.812081"/>
+</suite>
+<status status="PASS" start="2025-03-03T17:13:29.140828" elapsed="9.094602"/>
 </suite>
 <statistics>
 <total>
@@ -326,7 +365,8 @@
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Comprar Passagem Po">Comprar Passagem Po</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Web">Web</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Comprar Passagem Po Ddt">Web.Comprar Passagem Po Ddt</stat>
 </suite>
 </statistics>
 <errors>

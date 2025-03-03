@@ -1,16 +1,23 @@
 *** Settings ***
 
 Resource    ../../pages/base_page.robot
+Test Template    Comprar passagem
 
 *** Test Cases ***
+TC001    Paris    Buenos Aires   
+TC002    Paris    Rome
+TC003    Paris    London 
+
+*** Keywords ***
 
 Comprar passagem
+    [Arguments]    ${cidade_partida}    ${cidade_destino}
     Tirar Screenshot    1-Home
-    Selecionar cidade de partida    Paris
-    Selecionar cidade de destino    Buenos Aires
+    Selecionar cidade de partida    ${cidade_partida}
+    Selecionar cidade de destino    ${cidade_destino}
     Tirar Screenshot    2- Destino escolhido
     Clicar no botão Find Flights
-    Element Text Should Be    ${titulo_secao_h3}    Flights from Paris to Buenos Aires:
+    Element Text Should Be    ${titulo_secao_h3}    Flights from ${cidade_partida} to ${cidade_destino}:
     Tirar Screenshot    3- Voos Disponiveis
     Selecionar primeiro voo    
     Tirar Screenshot    4- Voo Selecionado

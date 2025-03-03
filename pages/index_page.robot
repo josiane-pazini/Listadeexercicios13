@@ -17,6 +17,8 @@ Selecionar cidade de partida
 Selecionar cidade de destino
     [Arguments]    ${destino}
     Wait Until Element Is Visible    ${cidade_destino}
+    Click Element    ${cidade_destino}
+    #Click Element      Rome  
     Select From List By Label    ${cidade_destino}    ${destino}
 
 Clicar no botão Find Flights
